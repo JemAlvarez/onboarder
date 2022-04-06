@@ -1,7 +1,10 @@
 import SwiftUI
 
 public struct OBPage {
-    public let color: Color
-    public let imageName: String
-    public let label: (title: LocalizedStringKey, description: LocalizedStringKey)
+    let color: Color
+    let imageName: String
+    let label: (title: LocalizedStringKey, description: LocalizedStringKey)
+    
+    // init
+    public init() {}
 }
