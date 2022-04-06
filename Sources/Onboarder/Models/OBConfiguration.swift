@@ -16,19 +16,37 @@ import SwiftUI
 ///
 public struct OBConfiguration {
     // Misc
-    var isSkippable: Bool = true
+    let isSkippable: Bool
     
     // Buttons
-    var buttonLabel: LocalizedStringKey = "Get Started!"
-    var nextButtonSFSymbol: String = "arrowtriangle.forward.circle.fill"
-    var previousButtonSFSymbol: String = "arrowtriangle.backward.circle.fill"
+    let buttonLabel: LocalizedStringKey
+    let nextButtonSFSymbol: String
+    let previousButtonSFSymbol: String
     
     // Text content
-    var textContentHeight: CGFloat = 300
-    var textContentBackgroundColor: Color = .gray
-    var textContentCornerRadius: CGFloat = 100
-    var textContactCorner: UIRectCorner = .topLeft
+    let textContentHeight: CGFloat
+    let textContentBackgroundColor: Color
+    let textContentCornerRadius: CGFloat
+    let textContactCorner: UIRectCorner
     
     // init
-    public init() {}
+    public init(
+        isSkippable: Bool = true,
+        buttonLabel: LocalizedStringKey = "Get Started!",
+        nextButtonSFSymbol: String = "arrowtriangle.forward.circle.fill",
+        previousButtonSFSymbol: String = "arrowtriangle.backward.circle.fill",
+        textContentHeight: CGFloat = 300,
+        textContentBackgroundColor: Color = .gray,
+        textContentCornerRadius: CGFloat = 100,
+        textContactCorner: UIRectCorner = .topLeft
+    ) {
+        self.isSkippable = isSkippable
+        self.buttonLabel = buttonLabel
+        self.nextButtonSFSymbol = nextButtonSFSymbol
+        self.previousButtonSFSymbol = previousButtonSFSymbol
+        self.textContentHeight = textContentHeight
+        self.textContentBackgroundColor = textContentBackgroundColor
+        self.textContentCornerRadius = textContentCornerRadius
+        self.textContactCorner = textContactCorner
+    }
 }
