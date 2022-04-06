@@ -6,5 +6,9 @@ public struct OBPage {
     let label: (title: LocalizedStringKey, description: LocalizedStringKey)
     
     // init
-    public init() {}
+    public init(color: Color, imageName: String, label: (title: LocalizedStringKey, description: LocalizedStringKey)) {
+        self.color = color
+        self.imageName = imageName
+        self.label = label
+    }
 }

@@ -32,13 +32,13 @@ struct SwiftUIView_Previews: PreviewProvider {
 //MARK: - Inits
 public extension OnboardingView {
     // Pages with defaults config
-    public init(pages: [OBPage]) {
+    init(pages: [OBPage]) {
         self.pages = pages
         self.config = OBConfiguration()
     }
     
     // Pages with custom config
-    public init(pages: [OBPage], configuration: OBConfiguration) {
+    init(pages: [OBPage], configuration: OBConfiguration) {
         self.pages = pages
         self.config = configuration
     }
