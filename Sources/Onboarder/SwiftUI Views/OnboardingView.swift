@@ -12,7 +12,7 @@ public struct OnboardingView: View {
     // Config
     let config: OBConfiguration
     
-    var body: some View {
+    public var body: some View {
         mainView()
     }
 }
