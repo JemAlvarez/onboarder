@@ -16,16 +16,16 @@ import SwiftUI
 ///
 public struct OBConfiguration {
     // Misc
-    var isSkippable: Bool = true
+    public var isSkippable: Bool = true
     
     // Buttons
-    var buttonLabel: LocalizedStringKey = "Get Started!"
-    var nextButtonSFSymbol: String = "arrowtriangle.forward.circle.fill"
-    var previousButtonSFSymbol: String = "arrowtriangle.backward.circle.fill"
+    public var buttonLabel: LocalizedStringKey = "Get Started!"
+    public var nextButtonSFSymbol: String = "arrowtriangle.forward.circle.fill"
+    public var previousButtonSFSymbol: String = "arrowtriangle.backward.circle.fill"
     
     // Text content
-    var textContentHeight: CGFloat = 300
-    var textContentBackgroundColor: Color = .gray
-    var textContentCornerRadius: CGFloat = 100
-    var textContactCorner: UIRectCorner = .topLeft
+    public var textContentHeight: CGFloat = 300
+    public var textContentBackgroundColor: Color = .gray
+    public var textContentCornerRadius: CGFloat = 100
+    public var textContactCorner: UIRectCorner = .topLeft
 }
