@@ -14,7 +14,7 @@ import SwiftUI
 /// * textContentCornerRadius -> Make your onboarding skippable or not.
 /// * textContactCorner -> Make your onboarding skippable or not.
 ///
-struct OBConfiguration {
+public struct OBConfiguration {
     // Misc
     var isSkippable: Bool = true
     

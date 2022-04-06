@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct OnboardingView: View {
+public struct OnboardingView: View {
     // Dismiss
     @Environment(\.presentationMode) var presentationMode
     // Page state
@@ -30,15 +30,15 @@ struct SwiftUIView_Previews: PreviewProvider {
 }
 
 //MARK: - Inits
-extension OnboardingView {
+public extension OnboardingView {
     // Pages with defaults config
-    init(pages: [OBPage]) {
+    public init(pages: [OBPage]) {
         self.pages = pages
         self.config = OBConfiguration()
     }
     
     // Pages with custom config
-    init(pages: [OBPage], configuration: OBConfiguration) {
+    public init(pages: [OBPage], configuration: OBConfiguration) {
         self.pages = pages
         self.config = configuration
     }
