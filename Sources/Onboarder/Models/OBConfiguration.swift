@@ -6,13 +6,13 @@ import SwiftUI
 ///
 /// **Parameters**
 /// * isSkippable -> Make your onboarding skippable or not.
-/// * buttonLabel -> Make your onboarding skippable or not.
-/// * nextButtonSFSymbol -> Make your onboarding skippable or not.
-/// * previousButtonSFSymbol -> Make your onboarding skippable or not.
-/// * textContentHeight -> Make your onboarding skippable or not.
-/// * textContentBackgroundColor -> Make your onboarding skippable or not.
-/// * textContentCornerRadius -> Make your onboarding skippable or not.
-/// * textContactCorner -> Make your onboarding skippable or not.
+/// * buttonLabel -> Change the label for the last page button (Localizable).
+/// * nextButtonSFSymbol -> SF Symbol for next button.
+/// * previousButtonSFSymbol -> SF Symbol for previous button.
+/// * textContentHeight -> Height for the text container.
+/// * textContentBackgroundColor -> Background for the text container.
+/// * textContentCornerRadius -> Radius for the text container.
+/// * textContentCorner -> Corners to round for the text container.
 ///
 public struct OBConfiguration {
     // Misc
@@ -27,7 +27,7 @@ public struct OBConfiguration {
     let textContentHeight: CGFloat
     let textContentBackgroundColor: Color
     let textContentCornerRadius: CGFloat
-    let textContactCorner: UIRectCorner
+    let textContentCorner: UIRectCorner
     
     // init
     public init(
@@ -47,6 +47,6 @@ public struct OBConfiguration {
         self.textContentHeight = textContentHeight
         self.textContentBackgroundColor = textContentBackgroundColor
         self.textContentCornerRadius = textContentCornerRadius
-        self.textContactCorner = textContactCorner
+        self.textContentCorner = textContactCorner
     }
 }

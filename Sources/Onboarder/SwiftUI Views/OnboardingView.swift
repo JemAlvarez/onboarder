@@ -141,7 +141,7 @@ extension OnboardingView {
             .padding(Defaults.padding)
             .padding(.bottom, Defaults.padding * 1.5)
             .background(config.textContentBackgroundColor)
-            .cornerRadius(config.textContentCornerRadius, corners: config.textContactCorner)
+            .cornerRadius(config.textContentCornerRadius, corners: config.textContentCorner)
             .offset(y: 40)
         }
     }

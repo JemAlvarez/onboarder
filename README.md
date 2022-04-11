@@ -68,14 +68,22 @@ class ViewController: UIViewController {
 ## Configuration
 
 ```swift
-isSkippable: Bool
-buttonLabel: String
-nextButtonSFSymbol: String 
-previousButtonSFSymbol: String
-textContentHeight: CGFloat
-textContentBackgroundColor: Color 
-textContentCornerRadius: CGFloat
-textContentCorner: CGFloat
+// Make your onboarding skippable or not.
+isSkippable: Bool = true,
+// Change the label for the last page button (Localizable).
+buttonLabel: LocalizedStringKey = "Get Started!",
+// SF Symbol for next button.
+nextButtonSFSymbol: String = "arrowtriangle.forward.circle.fill",
+// SF Symbol for previous button.
+previousButtonSFSymbol: String = "arrowtriangle.backward.circle.fill",
+// Height for the text container.
+textContentHeight: CGFloat = 300,
+// Background for the text container.
+textContentBackgroundColor: Color = .gray,
+// Radius for the text container.
+textContentCornerRadius: CGFloat = 100,
+// Corners to round for the text container.
+textContactCorner: UIRectCorner = .topLeft
 ```
 
 ## Notes
