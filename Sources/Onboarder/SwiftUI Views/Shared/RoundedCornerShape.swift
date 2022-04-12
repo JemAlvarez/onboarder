@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 14, *)
 struct RoundedCornerShape: Shape {
     var radius: CGFloat = .infinity
     var corners: UIRectCorner = .allCorners

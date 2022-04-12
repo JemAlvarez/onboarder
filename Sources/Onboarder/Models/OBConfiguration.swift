@@ -14,6 +14,7 @@ import SwiftUI
 /// * textContentCornerRadius -> Radius for the text container.
 /// * textContentCorner -> Corners to round for the text container.
 ///
+@available(iOS 14, *)
 public struct OBConfiguration {
     // Misc
     let isSkippable: Bool

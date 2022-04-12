@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 14, *)
 public struct OBPage {
     let color: Color
     let imageName: String

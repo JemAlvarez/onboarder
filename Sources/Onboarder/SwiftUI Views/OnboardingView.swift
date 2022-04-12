@@ -18,19 +18,8 @@ public struct OnboardingView: View {
     }
 }
 
-//MARK: - Preview
-struct SwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        OnboardingView(pages: [
-            OBPage(color: .red, imageName: "img", label: ("Title", "Lorem ipsum description")),
-            OBPage(color: .blue, imageName: "img", label: ("Title", "Lorem ipsum description")),
-            OBPage(color: .purple, imageName: "img", label: ("Title", "Lorem ipsum description")),
-            OBPage(color: .green, imageName: "img", label: ("Title", "Lorem ipsum description"))
-        ])
-    }
-}
-
 //MARK: - Inits
+@available(iOS 14, *)
 public extension OnboardingView {
     // Pages with defaults config
     init(pages: [OBPage]) {
@@ -46,6 +35,7 @@ public extension OnboardingView {
 }
 
 //MARK: - Main Views
+@available(iOS 14, *)
 extension OnboardingView {
     //MARK: - Main View
     func mainView() -> some View {
@@ -98,6 +88,7 @@ extension OnboardingView {
 }
 
 //MARK: - Sub Views
+@available(iOS 14, *)
 extension OnboardingView {
     //MARK: - Page View
     func pageView(i: Int) -> some View {
