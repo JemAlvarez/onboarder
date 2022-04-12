@@ -5,9 +5,6 @@ import PackageDescription
 
 let package = Package(
     name: "Onboarder",
-    platforms: [
-        .iOS(.v14)
-    ],
     products: [
         .library(name: "Onboarder", targets: ["Onboarder"])
     ],
