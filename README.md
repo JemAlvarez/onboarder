@@ -20,9 +20,9 @@ struct OnboardingExample: View {
 	let pages: [OBPage] = [
 		OBPage(color: .blue, imageName: "img", label: ("Page 1", "First page")),
 		OBPage(color: .red, imageName: "img", label: ("Page 2", "Second page"))
-		]
+	]
 
-		let configuration: OBConfiguration = OBConfiguration(textContentBackgroundColor: Color("darkBlack"))
+	let configuration: OBConfiguration = OBConfiguration(textContentBackgroundColor: Color("darkBlack"))
 
 	var body: some View {
 		// With custom configuration

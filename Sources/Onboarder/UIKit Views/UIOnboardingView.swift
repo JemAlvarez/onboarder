@@ -3,6 +3,7 @@
 import UIKit
 import SwiftUI
 
+@available(iOS 14, *)
 public class UIOnboardingView: UIView {
     public init(frame: CGRect, pages: [OBPage]) {
         super.init(frame: frame)

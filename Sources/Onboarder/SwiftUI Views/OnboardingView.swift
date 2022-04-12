@@ -2,6 +2,7 @@
 
 import SwiftUI
 
+@available(iOS 14, *)
 public struct OnboardingView: View {
     // Dismiss
     @Environment(\.presentationMode) var presentationMode
