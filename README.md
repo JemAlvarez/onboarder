@@ -26,10 +26,10 @@ struct OnboardingExample: View {
 
 	var body: some View {
 		// With custom configuration
-		OnboardingView(pages: pages, config: configuration)
+		OnboardingView(pages: pages, config: configuration, dismiss: yourDismissFunc)
 
 		// Without default configuration
-		OnboardingView(pages: pages)
+		OnboardingView(pages: pages, dismiss: yourDismissFunc)
 	}
 }
 ```
@@ -51,11 +51,11 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
         
 		// Without default configuration
-		let onboarding = UIOnboardingView(frame: .zero, pages: pages)
+		let onboarding = UIOnboardingView(frame: .zero, pages: pages, dismiss: yourDismissFunc)
 
 		// With custom configuration
 		let config = OBConfiguration(isSkippable: false)
-		let onboardingWithConfig = UIOnboardingView(frame: .zero, pages: pages, configuration: config)
+		let onboardingWithConfig = UIOnboardingView(frame: .zero, pages: pages, configuration: config, dismiss: yourDismissFunc)
         
 		// Add onboarding view to viewController
 		view.addSubview(onboarding)

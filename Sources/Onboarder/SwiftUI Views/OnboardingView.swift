@@ -4,14 +4,14 @@ import SwiftUI
 
 @available(iOS 14, *)
 public struct OnboardingView: View {
-    // Dismiss
-    @Environment(\.presentationMode) var presentationMode
     // Page state
     @State var page = 0
     // Pages
     let pages: [OBPage]
     // Config
     let config: OBConfiguration
+    // Dismiss action
+    let dismiss: () -> Void
     
     public var body: some View {
         mainView()
@@ -22,15 +22,17 @@ public struct OnboardingView: View {
 @available(iOS 14, *)
 public extension OnboardingView {
     // Pages with defaults config
-    init(pages: [OBPage]) {
+    init(pages: [OBPage], dismiss: @escaping () -> Void) {
         self.pages = pages
         self.config = OBConfiguration()
+        self.dismiss = dismiss
     }
     
     // Pages with custom config
-    init(pages: [OBPage], configuration: OBConfiguration) {
+    init(pages: [OBPage], configuration: OBConfiguration, dismiss: @escaping () -> Void) {
         self.pages = pages
         self.config = configuration
+        self.dismiss = dismiss
     }
 }
 
@@ -202,7 +204,7 @@ extension OnboardingView {
             
             if page == pages.count - 1 {
                 Button(action: {
-                    presentationMode.wrappedValue.dismiss()
+                    dismiss()
                 }) {
                     Text(config.buttonLabel)
                         .font(.title3)
